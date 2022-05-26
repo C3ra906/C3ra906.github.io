@@ -12,7 +12,36 @@
     <main>
       <section id="navbar"></section>
       <section id="content">
-        <h1 id="h1">Let's Connect!</h1>
+        <form class="form" method="GET" action="">
+          <h1 class="form-title" id="h1">Let's Connect!</h1>
+          <div class="form-element">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" autocomplete="name" />
+          </div>
+          <div class="form-element">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="name" autocomplete="email" />
+          </div>
+          <div class="form-element">
+            <textarea id="message">Enter a message here...</textarea>
+          </div>
+          <div class="btn">
+            <input
+              id="submit"
+              class="btn"
+              type="submit"
+              name="submit"
+              value="Submit"
+            />
+            <input
+              id="reset"
+              class="btn"
+              type="reset"
+              name="reset"
+              value="Reset"
+            />
+          </div>
+        </form>
       </section>
     </main>
   </body>

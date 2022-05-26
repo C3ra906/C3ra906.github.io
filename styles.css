@@ -2,9 +2,15 @@
   --white: #ffffff;
   --black: #080808;
   --purple: #800080;
-  --lavender: #7f5ab0;
+  --lavender: #d5c0f0;
+  --pink: #feb8e1;
 }
 
 #h1 {
   text-align: center;
+}
+
+#content {
+  text-align: center;
+  background-color: var(--lavender);
 }
