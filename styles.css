@@ -1,4 +1,10 @@
 :root {
   --white: #ffffff;
   --black: #080808;
+  --purple: #800080;
+  --lavender: #7f5ab0;
+}
+
+#h1 {
+  text-align: center;
 }
