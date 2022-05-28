@@ -4,28 +4,29 @@ let navbar = document.querySelector("#navbar");
 let nav = document.createElement("nav");
 //let test = document.createTextNode("This is a test message");
 let index = document.createElement("a");
-index.href = "index.html";
+index.setAttribute("href", "index.html");
 index.setAttribute("class", "nav-link");
-let indextxt = document.createTextNode("Home");
+index.innerHTML = "Home";
+
 let about = document.createElement("a");
-about.href = "about.html";
+about.setAttribute("href", "about.html");
 about.setAttribute("class", "nav-link");
-let abouttxt = document.createTextNode("About");
+about.innerHTML = "About";
 
 let previous = document.createElement("a");
-previous.href = "previous.html";
+previous.setAttribute("href", "previous.html");
 previous.setAttribute("class", "nav-link");
-let previoustxt = document.createTextNode("Previous Work");
+previous.innerHTML = "Previous Work";
 
 let projects = document.createElement("a");
-projects.href = "projects.html";
+projects.setAttribute("href", "projects.html");
 projects.setAttribute("class", "nav-link");
-let projectstxt = document.createTextNode("Projects");
+projects.innerHTML = "Projects";
 
 let contact = document.createElement("a");
-contact.href = "contact.html";
+contact.setAttribute("href", "contact.html");
 contact.setAttribute("class", "nav-link");
-let contacttxt = document.createTextNode("Contact");
+contact.innerHTML = "Contact";
 
 //Style
 nav.style.backgroundColor = "purple";
@@ -71,12 +72,7 @@ contact.style.padding = "30px";
 navbar.appendChild(nav);
 //navbar.appendChild(test);
 nav.appendChild(index);
-index.appendChild(indextxt);
 nav.appendChild(about);
-about.appendChild(abouttxt);
 nav.appendChild(previous);
-previous.appendChild(previoustxt);
 nav.appendChild(projects);
-projects.appendChild(projectstxt);
 nav.appendChild(contact);
-contact.appendChild(contacttxt);
