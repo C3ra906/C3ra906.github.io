@@ -29,9 +29,9 @@ contact.setAttribute("class", "nav-link");
 contact.innerHTML = "Contact";
 
 //Style
+
 nav.style.backgroundColor = "purple";
 nav.style.fontSize = "100%";
-//nav.style.float = "left";
 
 index.style.boxSizing = "border-box";
 index.style.display = "inline-block";
@@ -76,3 +76,39 @@ nav.appendChild(about);
 nav.appendChild(previous);
 nav.appendChild(projects);
 nav.appendChild(contact);
+
+//mouseover
+index.addEventListener("mouseover", function (event) {
+  index.style.fontWeight = "bold";
+  index.style.color = "pink";
+  index.style.textDecorationLine = "overline underline";
+});
+index.addEventListener("mouseleave", function (event) {
+  index.style.color = "white";
+  index.style.fontWeight = "normal";
+  index.style.textDecoration = "none";
+});
+about.addEventListener("mouseover", function (event) {
+  about.style.color = "pink";
+});
+about.addEventListener("mouseleave", function (event) {
+  about.style.color = "white";
+});
+previous.addEventListener("mouseover", function (event) {
+  previous.style.color = "pink";
+});
+previous.addEventListener("mouseleave", function (event) {
+  previous.style.color = "white";
+});
+projects.addEventListener("mouseover", function (event) {
+  projects.style.color = "pink";
+});
+projects.addEventListener("mouseleave", function (event) {
+  projects.style.color = "white";
+});
+contact.addEventListener("mouseover", function (event) {
+  contact.style.color = "pink";
+});
+contact.addEventListener("mouseleave", function (event) {
+  contact.style.color = "white";
+});
