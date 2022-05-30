@@ -11,6 +11,8 @@
 }
 
 #content {
+  padding: 20px;
   text-align: center;
-  background-color: var(--lavender);
+  border-style: double;
+  border-color: var(--lavender);
 }
