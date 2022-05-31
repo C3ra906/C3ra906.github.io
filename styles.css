@@ -4,6 +4,7 @@
   --purple: #800080;
   --lavender: #d5c0f0;
   --pink: #feb8e1;
+  --blue: #400bbc;
 }
 
 #h1 {
@@ -11,8 +12,37 @@
 }
 
 #content {
+  margin: 5% 10%;
   padding: 20px;
   text-align: center;
   border-style: double;
+  border-width: 15px;
   border-color: var(--lavender);
+  color: var(--blue);
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  padding: 25px 0px;
+  margin: 0px;
+  float: center;
+}
+
+.button {
+  align-items: center;
+}
+
+.linked {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+
+.association {
+  font-weight: bold;
+}
+
+.title {
+  font-style: italic;
 }

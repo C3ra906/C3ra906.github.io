@@ -2,7 +2,7 @@ let navbar = document.querySelector("#navbar");
 
 //navbar elements
 let nav = document.createElement("nav");
-//let test = document.createTextNode("This is a test message");
+
 let btn1 = document.createElement("div");
 btn1.setAttribute("class", "button");
 let index = document.createElement("a");
@@ -38,23 +38,62 @@ contact.setAttribute("href", "contact.html");
 contact.setAttribute("class", "nav-link");
 contact.innerHTML = "Contact";
 
+let btn6 = document.createElement("div");
+btn6.setAttribute("class", "button");
+let logo = document.createElement("img");
+logo.setAttribute("src", "logo.png");
+logo.setAttribute("alt", "logo C O");
+logo.setAttribute("id", "logo");
+
 //icons
-let home = document.createElement("img");
-home.setAttribute("src", "/icons/iconmonstr-home-7-240.png");
-home.setAttribute("alt", "homepage");
-home.setAttribute("href", "index.html");
-home.style.visibility = "visible";
-home.style.width = "20px";
-home.style.height = "20px";
-home.style.alignSelf = "center";
-home.style.boxSizing = "inline-block";
-home.style.display = "inline-block";
+// let home = document.createElement("img");
+// home.setAttribute("src", "/icons/iconmonstr-home-7-240.png");
+// home.setAttribute("alt", "homepage");
+// home.setAttribute("href", "index.html");
+// home.setAttribute("class", "icon");
+// home.style.display = "none";
+// let person = document.createElement("img");
+// person.setAttribute("src", "/icons/iconmonstr-user-7.svg");
+// person.setAttribute("alt", "about page");
+// person.setAttribute("href", "about.html");
+// person.setAttribute("class", "icon");
+// person.style.display = "none";
+// let mail = document.createElement("img");
+// mail.setAttribute("src", "/icons/iconmonstr-home-7-240.png");
+// mail.setAttribute("alt", "homepage");
+// mail.setAttribute("href", "index.html");
+// mail.setAttribute("class", "icon");
+
 //Style
 nav.style.backgroundColor = "purple";
-nav.style.fontSize = "100%";
 
-index.style.boxSizing = "inline-block";
-index.style.display = "inline-block";
+btn1.style.float = "left";
+btn2.style.float = "left";
+btn3.style.float = "left";
+btn4.style.float = "left";
+//btn5.style.float = "right";
+// btn1.style.boxSizing = "border-box";
+// btn1.style.display = "inline-block";
+// btn2.style.boxSizing = "border-box";
+// btn2.style.display = "inline-block";
+// btn3.style.boxSizing = "border-box";
+// btn3.style.display = "inline-block";
+// btn4.style.boxSizing = "border-box";
+// btn4.style.display = "inline-block";
+// btn5.style.boxSizing = "border-box";
+// btn5.style.display = "inline-block";
+
+//index.style.boxSizing = "border-box";
+//index.style.display = "inline-block";
+
+logo.style.width = "40px";
+logo.style.height = "40px";
+logo.style.boxSizing = "border-box";
+logo.style.display = "inline-block";
+logo.style.margin = "20px";
+logo.style.float = "left";
+
+index.style.float = "left";
 index.style.color = "white";
 index.style.backgroundColor = "purple";
 index.style.textDecoration = "none";
@@ -62,6 +101,7 @@ index.style.padding = "30px";
 
 about.style.boxSizing = "border-box";
 about.style.display = "inline-block";
+about.style.float = "left";
 about.style.color = "white";
 about.style.backgroundColor = "purple";
 about.style.textDecoration = "none";
@@ -90,60 +130,57 @@ contact.style.padding = "30px";
 
 //Add to DOM
 navbar.appendChild(nav);
-//navbar.appendChild(test);
+nav.appendChild(btn6);
+btn6.appendChild(logo);
 nav.appendChild(btn1);
-btn1.appendChild(home);
 btn1.appendChild(index);
-
 nav.appendChild(btn2);
 btn2.appendChild(about);
-//btn2.appendChild(home);
 nav.appendChild(btn3);
 btn3.appendChild(previous);
-//btn3.appendChild(home);
 nav.appendChild(btn4);
 btn4.appendChild(projects);
-//btn4.appendChild(home);
 nav.appendChild(btn5);
 btn5.appendChild(contact);
-//btn5.appendChild(home);
 
 //mouseover
-index.addEventListener("mouseover", function (event) {
-  //index.style.fontWeight = "bold";
-  //index.style.color = "pink";
-  //index.style.textDecorationLine = "overline underline";
-  index.innerHTML = "";
-  home.style.visibility = "visible";
+btn1.addEventListener("mouseover", function (event) {
+  index.style.fontWeight = "bold";
+  index.style.color = "pink";
 });
-index.addEventListener("mouseleave", function (event) {
-  index.innerHTML = "Home";
+btn1.addEventListener("mouseleave", function (event) {
   index.style.color = "white";
   index.style.fontWeight = "normal";
-  index.style.textDecoration = "none";
-  home.style.visibility = "hidden";
 });
-about.addEventListener("mouseover", function (event) {
+btn2.addEventListener("mouseover", function (event) {
+  about.style.fontWeight = "bold";
   about.style.color = "pink";
 });
-about.addEventListener("mouseleave", function (event) {
+btn2.addEventListener("mouseleave", function (event) {
+  about.style.fontWeight = "normal";
   about.style.color = "white";
 });
-previous.addEventListener("mouseover", function (event) {
+btn3.addEventListener("mouseover", function (event) {
   previous.style.color = "pink";
+  previous.style.fontWeight = "bold";
 });
-previous.addEventListener("mouseleave", function (event) {
+btn3.addEventListener("mouseleave", function (event) {
   previous.style.color = "white";
+  previous.style.fontWeight = "normal";
 });
-projects.addEventListener("mouseover", function (event) {
+btn4.addEventListener("mouseover", function (event) {
   projects.style.color = "pink";
+  projects.style.fontWeight = "bold";
 });
-projects.addEventListener("mouseleave", function (event) {
+btn4.addEventListener("mouseleave", function (event) {
   projects.style.color = "white";
+  projects.style.fontWeight = "normal";
 });
-contact.addEventListener("mouseover", function (event) {
+btn5.addEventListener("mouseover", function (event) {
   contact.style.color = "pink";
+  contact.style.fontWeight = "bold";
 });
-contact.addEventListener("mouseleave", function (event) {
+btn5.addEventListener("mouseleave", function (event) {
+  contact.style.fontWeight = "normal";
   contact.style.color = "white";
 });
