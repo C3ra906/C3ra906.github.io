@@ -39,10 +39,44 @@
   margin: 10px;
 }
 
+.section {
+  display: inline-block;
+  align-content: center;
+}
+
+.group {
+  border-style: solid;
+  border-color: var(--lavender);
+  border-radius: 80px;
+  background-color: var(--lavender);
+  float: left;
+  width: 220px;
+  height: 220px;
+  margin: 10px;
+  padding: 30px;
+}
+
+.pub {
+  border-style: solid;
+  border-color: var(--lavender);
+  border-radius: 80px;
+  margin: 10px;
+  padding: 30px;
+}
+
 .association {
   font-weight: bold;
 }
 
 .title {
   font-style: italic;
+}
+
+.deco {
+  width: 400px;
+  height: auto;
+}
+
+.text {
+  margin: 40px;
 }
