@@ -1,10 +1,17 @@
 :root {
   --white: #ffffff;
   --black: #080808;
-  --purple: #800080;
+  --purple: #640164;
   --lavender: #d5c0f0;
   --pink: #feb8e1;
-  --blue: #400bbc;
+  --blue: #3a78e1;
+  --lightblue: #7498d7;
+  --darkblue: #245ec1;
+  --grad: linear-gradient(0.25turn, #245ec1, #7498d7);
+}
+
+body {
+  /*background: var(--grad);*/
 }
 
 #h1 {
@@ -15,10 +22,10 @@
   margin: 5% 10%;
   padding: 20px;
   text-align: center;
-  border-style: double;
+  /*border-style: inset;
   border-width: 15px;
-  border-color: var(--lavender);
-  color: var(--blue);
+  border-color: var(--darkblue);*/
+  color: var(--black);
 }
 
 .icon {
@@ -79,4 +86,8 @@
 
 .text {
   margin: 40px;
+}
+
+.link {
+  text-decoration: none;
 }
