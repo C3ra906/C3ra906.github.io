@@ -94,7 +94,7 @@ contact.style.padding = "30px";
 let foot = document.querySelector("#foot");
 let footer = document.createElement("p");
 footer.setAttribute("class", "footer");
-footer.innerHTML = "(c) Cera Oh 2022";
+footer.innerHTML = "2022 CS510 Intro to Web Dev Final Project";
 
 //Footer element styles
 foot.style.background = "var(--grad)";

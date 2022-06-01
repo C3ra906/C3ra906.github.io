@@ -12,14 +12,18 @@
 
 body {
   /*background: var(--grad);*/
+  font-family: sans-serif;
 }
 
 #h1 {
   text-align: center;
+  font-size: 2em;
+  padding: 15px;
+  border-bottom: inset 0.25em var(--blue);
 }
 
 #content {
-  margin: 5% 10%;
+  margin: 0px;
   padding: 20px;
   text-align: center;
   /*border-style: inset;
@@ -47,28 +51,17 @@ body {
 }
 
 .section {
-  display: inline-block;
-  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.heading {
+  color: var(--darkblue);
+  padding-right: 50px;
 }
 
 .group {
-  border-style: solid;
-  border-color: var(--lavender);
-  border-radius: 80px;
-  background-color: var(--lavender);
-  float: left;
-  width: 220px;
-  height: 220px;
-  margin: 10px;
-  padding: 30px;
-}
-
-.pub {
-  border-style: solid;
-  border-color: var(--lavender);
-  border-radius: 80px;
-  margin: 10px;
-  padding: 30px;
+  display: inline-block;
 }
 
 .association {
@@ -79,9 +72,18 @@ body {
   font-style: italic;
 }
 
+#prog {
+  list-style-type: square;
+}
+
+#language {
+  list-style-type: square;
+  padding-right: 50px;
+}
+
 .deco {
-  width: 400px;
-  height: auto;
+  width: auto;
+  height: 500px;
 }
 
 .text {
@@ -90,4 +92,8 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.project {
+  text-align: left;
 }

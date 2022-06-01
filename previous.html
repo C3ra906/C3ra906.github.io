@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cera Oh's Previous Work</title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="previous.js"></script>
     <script defer src="navbar.js"></script>
   </head>
   <body>
@@ -14,14 +15,17 @@
       <section id="content">
         <h1 id="h1">Resume</h1>
         <div>
-          <button id="resume" action="Cera_Oh_Resume.pdf">
-            Download Resume
-          </button>
+          <a id="download" href="Cera_Oh_Resume.pdf" download
+            ><img
+              class="icon"
+              id="dl-icon"
+              src="/icons/iconmonstr-download-darkblue.png"
+              alt="download icon"
+            />PDF</a
+          >
         </div>
-        <div class="section odd">
-          <h2 class="heading">
-            **************************** Education ***************************
-          </h2>
+        <div class="section">
+          <h2 class="heading">Education</h2>
           <div class="group">
             <h3 class="association">Portland State University</h3>
             <p class="title">Masters of Science, Computer Science</p>
@@ -38,10 +42,8 @@
             <p class="date">Graduated June 2011</p>
           </div>
         </div>
-        <div class="section even">
-          <h2 class="heading">
-            ************************* Work Experience *************************
-          </h2>
+        <div class="section">
+          <h2 class="heading">Work Experience</h2>
           <div class="group">
             <h3 class="association">Apex Juris, PLLC</h3>
             <p class="title">Of Counsel</p>
@@ -56,7 +58,7 @@
             <p class="title">Attorney</p>
             <p class="date">November 2017-August 2020</p>
           </div>
-          <div class="Section even">
+          <div class="section">
             <div class="group">
               <h3 class="association">Medical Legal Partnership of Oregon</h3>
               <p class="title">Pro Bono Attorney</p>
@@ -74,9 +76,7 @@
           </div>
         </div>
         <div class="section">
-          <h2 class="heading">
-            ****************************** License *****************************
-          </h2>
+          <h2 class="heading">License</h2>
           <div class="group">
             <h3 class="association">
               United States Patent and Trademark Office
@@ -91,10 +91,7 @@
           </div>
         </div>
         <div class="section">
-          <h2 class="heading">
-            **************************** Publication
-            ****************************
-          </h2>
+          <h2 class="heading">Publication</h2>
           <div class="pub">
             <p class="title">
               Rescuing economics and management from Darwin's evolution via
@@ -108,25 +105,22 @@
           </div>
         </div>
         <div class="section">
-          <h2 class="heading">
-            ****************************** Skills ******************************
-          </h2>
+          <h2 class="heading">Skills</h2>
           <div class="group">
             <h3 class="association">Languages</h3>
-            <ul>
-              <li>Korean - Fluent</li>
-              <li>English - Fluent</li>
+            <ul id="language">
+              <li id="lang">Korean</li>
+              <li id="lang">English</li>
             </ul>
           </div>
           <div class="group">
             <h3 class="association">Programming</h3>
-            <p>Experience with:</p>
-            <ul>
-              <li>C</li>
-              <li>C++</li>
-              <li>Java</li>
-              <li>Python</li>
-              <li>Scala</li>
+            <ul id="prog">
+              <li id="pl">C</li>
+              <li id="pl">C++</li>
+              <li id="pl">Java</li>
+              <li id="pl">Python</li>
+              <li id="pl">Scala</li>
             </ul>
           </div>
         </div>
