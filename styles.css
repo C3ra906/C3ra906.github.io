@@ -97,3 +97,17 @@ body {
 .project {
   text-align: left;
 }
+
+.plinked {
+  height: 30px;
+  width: 30px;
+}
+
+.project {
+  border-style: inset;
+  border-width: 3px;
+  border-color: var(--darkblue);
+  padding: 10px;
+  margin: 50px 100px;
+  float: center;
+}
