@@ -12,5 +12,6 @@ function handleSubmit(event) {
   } else {
     //Empty name or email
     console.warn("You must enter name and email to submit this form");
+    alert("Please enter a name and email to submit!");
   }
 }

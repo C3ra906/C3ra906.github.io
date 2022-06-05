@@ -7,7 +7,6 @@ let intro = document.getElementById("intro");
 pic.style.height = "280px";
 pic.style.width = "280px";
 pic.style.borderRadius = "20px";
-pic.style.float = "left";
 pic.style.margin = "50px";
 
 hello.style.fontWeight = "bold";

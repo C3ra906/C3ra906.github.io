@@ -3,7 +3,6 @@ let idownload = document.querySelector("#dl-icon");
 
 //Styles
 download.style.textDecoration = "none";
-download.style.float = "right";
 download.style.padding = "20px";
 idownload.style.padding = "0px";
 
