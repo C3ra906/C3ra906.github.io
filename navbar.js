@@ -6,48 +6,42 @@ let nav = document.createElement("nav");
 let btn1 = document.createElement("div");
 btn1.setAttribute("class", "button");
 let index = document.createElement("a");
-index.setAttribute("href", "https://c3ra906.github.io/index.html");
+index.setAttribute("href", "index.html");
 index.setAttribute("class", "nav-link");
 index.innerHTML = "Home";
 
 let btn2 = document.createElement("div");
 btn2.setAttribute("class", "button");
 let about = document.createElement("a");
-about.setAttribute("href", "https://c3ra906.github.io/about/about.html");
+about.setAttribute("href", "about.html");
 about.setAttribute("class", "nav-link");
 about.innerHTML = "About";
 
 let btn3 = document.createElement("div");
 btn3.setAttribute("class", "button");
 let previous = document.createElement("a");
-previous.setAttribute(
-  "href",
-  "https://c3ra906.github.io/previous/previous.html"
-);
+previous.setAttribute("href", "previous.html");
 previous.setAttribute("class", "nav-link");
 previous.innerHTML = "Previous Work";
 
 let btn4 = document.createElement("div");
 btn4.setAttribute("class", "button");
 let projects = document.createElement("a");
-projects.setAttribute(
-  "href",
-  "https://c3ra906.github.io/projects/projects.html"
-);
+projects.setAttribute("href", "projects.html");
 projects.setAttribute("class", "nav-link");
 projects.innerHTML = "Projects";
 
 let btn5 = document.createElement("div");
 btn5.setAttribute("class", "button");
 let contact = document.createElement("a");
-contact.setAttribute("href", "https://c3ra906.github.io/contact/contact.html");
+contact.setAttribute("href", "contact.html");
 contact.setAttribute("class", "nav-link");
 contact.innerHTML = "Contact";
 
 let btn6 = document.createElement("div");
 btn6.setAttribute("class", "button");
 let logo = document.createElement("img");
-logo.setAttribute("src", "https://c3ra906.github.io/imgs/logo.png");
+logo.setAttribute("src", "imgs/logo.png");
 logo.setAttribute("alt", "logo C O");
 logo.setAttribute("id", "logo");
 
@@ -100,7 +94,7 @@ contact.style.padding = "30px";
 let foot = document.querySelector("#foot");
 let footer = document.createElement("p");
 footer.setAttribute("class", "footer");
-footer.innerHTML = "2022 CS510 Intro to Web Dev Final Project";
+footer.innerHTML = "(c) Cera Oh 2022 - CS510 Intro to Web Dev Final Project";
 
 //Footer element styles
 foot.style.background = "var(--grad)";
