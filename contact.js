@@ -1,0 +1,20 @@
+let form = document.querySelector("form");
+
+form.addEventListener("submit", handleSubmit);
+
+function handleSubmit(event) {
+  if (
+    form.name.value.length > 0 &&
+    form.email.value.length > 0 &&
+    form.message.value.length > 0
+  ) {
+    console.log("========= Form Submission =========");
+    console.log("Name: " + form.name.value);
+    console.log("Email: " + form.email.value);
+    console.log("Message: " + form.message);
+    event.preventDefault();
+  } else {
+    //Empty name or email
+    console.warn("You must enter some data to submit this form");
+  }
+}
