@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Cera</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="contact.css" />
-    <script defer src="navbar.js"></script>
+    <script defer src="../navbar.js"></script>
     <script defer src="contact.js"></script>
   </head>
   <body>
@@ -20,9 +20,9 @@
             id="img-connect"
             alt="contact"
             title="photo by Melinda Gimpel on Unsplash"
-            src="imgs/melinda-gimpel-5Ne6mMQtIdo-unsplash.jpg"
+            src="../imgs/melinda-gimpel-5Ne6mMQtIdo-unsplash.jpg"
           />
-          <form class="form" method="GET" action="">
+          <form class="form" id="form" method="GET" action="">
             <h1 class="form-title" id="fh1">Let's Connect!</h1>
             <div class="form-element">
               <label for="name">Name:</label>
@@ -30,7 +30,12 @@
             </div>
             <div class="form-element">
               <label for="email">Email:</label>
-              <input type="email" id="email" name="name" autocomplete="email" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+              />
             </div>
             <div class="form-element">
               <textarea
