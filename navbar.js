@@ -44,6 +44,7 @@ let logo = document.createElement("img");
 logo.setAttribute("src", "imgs/logo.png");
 logo.setAttribute("alt", "logo C O");
 logo.setAttribute("id", "logo");
+logo.setAttribute("class", "logo");
 
 //Navbar element styles
 nav.style.background = "var(--grad)";

@@ -1,3 +1,4 @@
+/*all pages*/
 :root {
   --white: #ffffff;
   --black: #080808;
@@ -14,6 +15,14 @@ body {
   font-family: sans-serif;
 }
 
+.text {
+  margin: 40px;
+}
+
+.link {
+  text-decoration: none;
+}
+
 #h1 {
   text-align: center;
   font-size: 2em;
@@ -28,22 +37,38 @@ body {
   color: var(--black);
 }
 
-.icon {
-  height: 20px;
-  width: 20px;
-  padding: 25px 0px;
-  margin: 0px;
-  float: center;
+#intro {
+  padding: 10px 30px;
 }
 
-.button {
-  align-items: center;
+/*index page*/
+.deco {
+  width: auto;
+  height: 500px;
 }
 
 .linked {
   height: 40px;
   width: 40px;
   margin: 10px;
+}
+
+/*about page*/
+.profile {
+  float: left;
+  margin: 40px;
+  height: 280px;
+  width: 280px;
+  border-radius: 20px;
+}
+
+/*previous page*/
+.icon {
+  height: 20px;
+  width: 20px;
+  padding: 25px 0px;
+  margin: 0px;
+  float: center;
 }
 
 .section {
@@ -65,7 +90,6 @@ body {
 
 .heading {
   color: var(--darkblue);
-  padding-right: 50px;
 }
 
 .association {
@@ -85,39 +109,20 @@ body {
   padding-right: 50px;
 }
 
-.deco {
-  width: auto;
-  height: 500px;
-}
-
-#img-connect {
-  height: 350px;
-  width: auto;
-}
-
-.profile {
-  float: left;
-}
-
-.nav-link {
-  padding: 30px;
-}
-
-.text {
-  margin: 40px;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.project {
-  text-align: left;
-}
-
+/*projects page*/
 .plinked {
   height: 30px;
   width: 30px;
+}
+
+.project {
+  border-style: inset;
+  border-width: 3px;
+  border-color: var(--darkblue);
+  padding: 10px;
+  width: 50em;
+  float: left;
+  text-align: left;
 }
 
 #sideways {
@@ -128,35 +133,76 @@ body {
   align-content: center;
 }
 
-.project {
-  border-style: inset;
-  border-width: 3px;
-  border-color: var(--darkblue);
-  padding: 10px;
-  width: 50em;
-  float: left;
+/*contact page*/
+#img-connect {
+  height: 350px;
+  width: auto;
 }
 
-@media (max-width: 768px) {
+/*navbar*/
+.nav-link {
+  padding: 30px;
+}
+
+.button {
+  align-items: center;
+}
+
+/*media queries*/
+@media (min-width: 415px) and (max-width: 768px) {
+  /*index page*/
   .deco {
     width: 300px;
     height: auto;
   }
 
+  /*previous page*/
+  .ptitle {
+    font-size: 1.2em;
+  }
+
+  /*contact page*/
   #img-connect {
     width: 300px;
     height: auto;
   }
 
-  .profile {
-    float: none;
-  }
-
+  /*navbar*/
   .nav-link {
     padding: 30px 5px;
   }
+}
 
+@media (max-width: 414px) {
+  /*index page*/
+  .deco {
+    width: 300px;
+    height: auto;
+  }
+
+  /*about page*/
+  .profile {
+    float: none;
+    margin: 35px;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+  }
+
+  /*previous page*/
   .ptitle {
     font-size: 1.2em;
+  }
+
+  /*contact page*/
+  #img-connect {
+    width: 300px;
+    height: auto;
+  }
+
+  /*navbar*/
+  .nav-link {
+    padding: 30px 5px;
+    font-size: 0.7em;
   }
 }

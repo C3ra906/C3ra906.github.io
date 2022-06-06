@@ -89,3 +89,23 @@
   color: var(--purple);
   font-weight: bold;
 }
+
+@media (min-width: 415px) and (max-width: 768px) {
+  .form-element label {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 414px) {
+  .form-element label {
+    margin: 2px;
+  }
+
+  .form-element input {
+    width: 60%;
+  }
+
+  .btn-1 {
+    margin-bottom: 10px;
+  }
+}
