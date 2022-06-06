@@ -37,24 +37,6 @@
   width: 68%;
 }
 
-#name {
-  margin: 10px 0 20px 10px;
-}
-
-#email {
-  margin: 10px 0 20px 10px;
-}
-
-#message-label {
-  float: left;
-  margin: 0px 40px 10px 40px;
-}
-
-#message {
-  width: 83%;
-  height: 100px;
-}
-
 .fbtn {
   margin: 25px 25px 10px 25px;
 }
@@ -95,6 +77,24 @@
   font-weight: bold;
 }
 
+#name {
+  margin: 10px 0 20px 10px;
+}
+
+#email {
+  margin: 10px 0 20px 10px;
+}
+
+#message-label {
+  float: left;
+  margin: 0px 40px 10px 40px;
+}
+
+#message {
+  width: 83%;
+  height: 100px;
+}
+
 #img-connect {
   height: 350px;
   width: auto;
@@ -111,7 +111,7 @@
   }
 
   #message-label {
-    margin: 0px 30px 10px 37px;
+    margin: 0px 30px 10px 38px;
   }
 }
 
@@ -127,10 +127,12 @@
   .btn-1 {
     margin-bottom: 10px;
   }
+
   #img-connect {
     width: 300px;
     height: auto;
   }
+
   #message-label {
     margin: 0px 10px 10px 20px;
   }

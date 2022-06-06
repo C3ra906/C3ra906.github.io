@@ -1,6 +1,5 @@
 //navbar elements
 let navbar = document.querySelector("#navbar");
-
 let nav = document.createElement("nav");
 
 let btn1 = document.createElement("div");
@@ -64,32 +63,27 @@ logo.style.float = "left";
 index.style.float = "left";
 index.style.color = "white";
 index.style.textDecoration = "none";
-// index.style.padding = "30px";
 
 about.style.boxSizing = "border-box";
 about.style.display = "inline-block";
 about.style.float = "left";
 about.style.color = "white";
 about.style.textDecoration = "none";
-//about.style.padding = "30px";
 
 previous.style.boxSizing = "border-box";
 previous.style.display = "inline-block";
 previous.style.color = "white";
 previous.style.textDecoration = "none";
-//previous.style.padding = "30px";
 
 projects.style.boxSizing = "border-box";
 projects.style.display = "inline-block";
 projects.style.color = "white";
 projects.style.textDecoration = "none";
-//rojects.style.padding = "30px";
 
 contact.style.boxSizing = "border-box";
 contact.style.display = "inline-block";
 contact.style.color = "white";
 contact.style.textDecoration = "none";
-//contact.style.padding = "30px";
 
 //Footer elements
 let foot = document.querySelector("#foot");

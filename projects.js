@@ -35,7 +35,7 @@ project2.style.display = "none";
 project3.style.display = "none";
 project4.style.display = "none";
 
-//Events
+//Events for slideshow
 larrow.addEventListener("mouseover", function (event) {
   left.src = "icons/iconmonstr-arrow-left-circle-filled-pink.png";
 });
@@ -79,6 +79,8 @@ rarrow.addEventListener("click", function (event) {
     project4.style.display = "none";
   }
 });
+
+//Events for github icons
 p1.addEventListener("mouseover", function (event) {
   icon1.src = "icons/iconmonstr-github-pink.png";
   p1.style.color = "var(--pink)";
