@@ -50,7 +50,7 @@ body {
 .linked {
   height: 40px;
   width: 40px;
-  margin: 10px;
+  margin: 0px 10px;
 }
 
 /*about page*/
@@ -133,12 +133,6 @@ body {
   align-content: center;
 }
 
-/*contact page*/
-#img-connect {
-  height: 350px;
-  width: auto;
-}
-
 /*navbar*/
 .nav-link {
   padding: 30px;
@@ -159,12 +153,6 @@ body {
   /*previous page*/
   .ptitle {
     font-size: 1.2em;
-  }
-
-  /*contact page*/
-  #img-connect {
-    width: 300px;
-    height: auto;
   }
 
   /*navbar*/
@@ -194,10 +182,10 @@ body {
     font-size: 1.2em;
   }
 
-  /*contact page*/
-  #img-connect {
-    width: 300px;
-    height: auto;
+  /*projects page*/
+  .project {
+    float: center;
+    text-align: center;
   }
 
   /*navbar*/
